@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clone the repository
-                git 'https://github.com/abdullahzahid39/React-Quiz-App.git'
+                // Clone the repository and check out the 'main' branch
+                git branch: 'main', url: 'https://github.com/abdullahzahid39/React-Quiz-App.git'
             }
         }
 
